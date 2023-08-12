@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Portfólio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="w-full">
+    <header class="mobileHeader flex justify-end p-4 bg-slate-300">
+      <img src="assets/menu.svg" alt="" />
+    </header>
+    <main class="p-8">
+      <div class="introContainer flex flex-col items-center">
+        <section class="avatar p-8">
+          <img src="assets/Ellipse 1.jpg" alt="Meu avatar" />
+        </section>
+        <section class="intro font-semibold text-3xl p-8">
+          Olá, sou aluno do curso de Front-End da Elaborata
+        </section>
+        <section class="introDescription">
+          <p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </section>
+        <button
+          class="downloadButton bg-red-600 text-white h-12 w-52 mt-7 cursor-pointer"
+        >
+          <a href="assets/meuCV.pdf" download="MeuCV">Download CV</a>
+        </button>
+      </div>
+      <section
+        class="recentPosts flex flex-col items-center mt-14"
+        style="background-color: #edf7fa"
+      >
+        <h1 class="p-5">Posts Recentes</h1>
+        <article class="firstPost bg-white m-3 p-5">
+          <h1 class="font-bold text-2xl p-3">Front-End Elaborata</h1>
+          <section class="aboutDate flex justify-between p-3 pt-4">
+            <p>12 Fev 2023</p>
+            <img src="assets/Vector 1.svg" alt="Vetor para divisão de conteudo">
+            <p>Design, Pattern</p>
+        </section>
+          <p class="pt-2">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </article>
+        <article class="secondPost bg-white m-3 p-5">
+            <h1 class="font-bold text-2xl p-3">Back-End Elaborata</h1>
+            <section class="aboutDate flex justify-between p-3 pt-4">
+              <p class="mr-">12 Fev 2023</p>
+              <img src="assets/Vector 1.svg" alt="Vetor para divisão de conteudo">
+              <p>Figma, Icon Design</p>
+          </section>
+            <p class="pt-2">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do 
+                amet sint.Velit officia consequat duis enim velit mollit. 
+                Exercitation veniam consequat sunt nostrud amet.
+            </p>
+      </section>
+      <section class="jobs "></section>
+      <article class="job1"></article>
+      <article class="job2"></article>
+      <article class="job3"></article>
+    </main>
+  </body>
+</html>
