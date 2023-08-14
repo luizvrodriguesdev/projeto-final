@@ -7,18 +7,26 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="w-full">
-    <header class="mobileHeader flex justify-end p-4 bg-slate-300">
-      <button><img src="assets/menu.svg" alt="" /></button>
+  <body class="w-full md:max-w-screen-xl md:flex md:flex-col md:mx-auto">
+    <header class="mobileHeader flex justify-end p-4 bg-slate-300 md:bg-white">
+      <button class="md:hidden"><img src="assets/menu.svg" alt="" /></button>
+      <nav class="hidden md:flex gap-8 font-bold text-lg">
+        <a href="">Works</a>
+        <a href="">Blog</a>
+        <a href="">Contato</a>
+
+      </nav>
     </header>
     <main class="p-8">
       <div class="introContainer flex flex-col items-center">
-        <section class="avatar p-8">
-          <img src="assets/Ellipse 1.jpg" alt="Meu avatar" />
-        </section>
-        <section class="intro font-semibold text-3xl p-8">
-          Olá, sou aluno do curso de Front-End da Elaborata
-        </section>
+        <div class="md:flex flex-row-reverse">
+          <section class="avatar p-8 md:w-2/3 flex justify-center">
+            <img src="assets/Ellipse 1.jpg" alt="Meu avatar" />
+          </section>
+          <section class="intro font-semibold text-3xl md:text-4xl p-8 md:pt-24">
+            Olá, sou aluno do curso de Front-End da Elaborata
+          </section>
+        </div>
         <section class="introDescription">
           <p>
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -33,7 +41,7 @@
         </button>
       </div>
       <section
-        class="recentPosts flex flex-col items-center mt-14"
+        class="recentPosts flex flex-col items-center mt-14 rounded-lg shadow-sm"
         style="background-color: #edf7fa"
       >
         <h2 class="p-5">Posts Recentes</h2>
@@ -66,32 +74,38 @@
       <section class="jobs flex flex-col items-center py-8">
         <h1 class="font-bold text-3xl">Meu Portfólio</h1>
         <div class="jobsContainer ">
-          <article class="job1 py-9">
-            <img src="assets/job1.png" alt="" class="w-screen">
-            <h2 class="font-bold text-2xl py-5">Designing Dashboards</h2>
-            <div class="flex">
-              <div class="rectangle">2020</div>
-              <p class="pl-6 pb-6 text-stone-400 ">Dashboard</p>
+          <article class="job1 py-9 sm:flex">
+            <img src="assets/job1.png" alt="" class="w-screen max-w-lg sm:w-auto sm:pr-5">
+            <div>
+              <h2 class="font-bold text-2xl py-5 sm:-mt-5">Designing Dashboards</h2>
+              <div class="JobDate flex">
+                <div class="rectangle">2020</div>
+                <p class="pl-6 pb-6 text-stone-400 ">Dashboard</p>
+              </div>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
             </div>
-            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
           </article>
-          <article class="job2">
-            <img src="assets/job2.jpg" alt="" class="w-screen">
-            <h2 class="font-bold text-2xl py-5">Vibrant Portraits of 2020</h2>
-            <div class="flex">
-              <div class="rectangle">2018</div>
-              <p class="pl-6 pb-6 text-stone-400 ">Illustration</p>
+          <article class="job2 sm:flex">
+            <img src="assets/job2.jpg" alt="" class="w-screen  max-w-lg sm:w-auto sm:pr-5">
+            <div>
+              <h2 class="font-bold text-2xl py-5 sm:-mt-5">Vibrant Portraits of 2020</h2>
+              <div class="flex">
+                <div class="JobDate rectangle">2018</div>
+                <p class="pl-6 pb-6 text-stone-400 ">Illustration</p>
+              </div>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
             </div>
-            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
           </article>
-          <article class="job3 pt-8">
-            <img src="assets/job3.png" alt="" class="w-screen">
-            <h2 class="font-bold text-2xl py-5">36 Days of Malayalam type</h2>
-            <div class="flex">
-              <div class="rectangle">2018</div>
-              <p class="pl-6 pb-6 text-stone-400 ">Typography</p>
+          <article class="job3 pt-8 sm:flex">
+            <img src="assets/job3.png" alt="" class="w-screen  max-w-lg sm:w-auto sm:pr-5">
+            <div>
+              <h2 class="font-bold text-2xl py-5">36 Days of Malayalam type</h2>
+              <div class="flex">
+                <div class="JobDate rectangle">2018</div>
+                <p class="pl-6 pb-6 text-stone-400 ">Typography</p>
+              </div>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
             </div>
-            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
           </article>
         </div>
       </section>
