@@ -27,7 +27,7 @@
           </p>
         </section>
         <button
-          class="downloadButton bg-red-600 text-white h-12 w-52 mt-7 cursor-pointer"
+          class="downloadButton bg-red-600 text-white h-12 w-52 mt-7 cursor-pointer hover:bg-red-800 font-bold"
         >
           <a href="assets/meuCV.pdf" download="MeuCV">Download CV</a>
         </button>
@@ -36,12 +36,12 @@
         class="recentPosts flex flex-col items-center mt-14"
         style="background-color: #edf7fa"
       >
-        <h1 class="p-5">Posts Recentes</h1>
+        <h2 class="p-5">Posts Recentes</h2>
         <article class="firstPost bg-white m-3 p-5">
-          <h1 class="font-bold text-2xl p-3">Front-End Elaborata</h1>
-          <section class="aboutDate flex justify-between p-3 pt-4">
+          <h1 class="font-bold text-2xl py-3">Front-End Elaborata</h1>
+          <section class="aboutDate flex pb-3 pt-4">
             <p>12 Fev 2023</p>
-            <img src="assets/Vector 1.svg" alt="Vetor para divisão de conteudo">
+            <img src="assets/Vector 1.svg" alt="Vetor para divisão de conteudo" class="px-5">
             <p>Design, Pattern</p>
         </section>
           <p class="pt-2">
@@ -51,10 +51,10 @@
           </p>
         </article>
         <article class="secondPost bg-white m-3 p-5">
-            <h1 class="font-bold text-2xl p-3">Back-End Elaborata</h1>
-            <section class="aboutDate flex justify-between p-3 pt-4">
-              <p class="mr-">12 Fev 2023</p>
-              <img src="assets/Vector 1.svg" alt="Vetor para divisão de conteudo">
+            <h2 class="font-bold text-2xl py-3">Back-End Elaborata</h2>
+            <section class="aboutDate flex pb-3 pt-4">
+              <p class="">12 Fev 2023</p>
+              <img src="assets/Vector 1.svg" alt="Vetor para divisão de conteudo" class="px-5">
               <p>Figma, Icon Design</p>
           </section>
             <p class="pt-2">
@@ -63,10 +63,19 @@
                 Exercitation veniam consequat sunt nostrud amet.
             </p>
       </section>
-      <section class="jobs "></section>
-      <article class="job1"></article>
-      <article class="job2"></article>
-      <article class="job3"></article>
+      <section class="jobs flex flex-col items-center py-8">
+        <h1>Meu Portfólio</h1>
+        <div class="jobsContainer ">
+          <article class="job1 py-9">
+            <img src="assets/job1.png" alt="" class="w-screen">
+            <h2 class="font-bold text-2xl py-5">Designing Dashboards</h2>
+            <div class="job1Photo">2020 </div>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          </article>
+          <article class="job2"></article>
+          <article class="job3"></article>
+        </div>
+      </section>
     </main>
   </body>
 </html>
