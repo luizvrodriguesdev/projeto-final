@@ -4,6 +4,14 @@ body {
   font-family: "Heebo", sans-serif;
 }
 
-.job1Photo {
+.rectangle {
   background-image: url(assets/DateRectangle.png);
+  background-repeat: no-repeat;
+  width: 62px;
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  
+  
+
 }
