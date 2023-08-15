@@ -13,6 +13,12 @@ body {
   font-weight: 900;
 }
 
+.separator {
+  background-image: url(assets/separator.svg);
+  background-size: cover;
+  height: 3px;
+}
+
 a:hover {
   text-decoration: underline;
 }
