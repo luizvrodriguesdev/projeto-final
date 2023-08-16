@@ -7,8 +7,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="w-full sm:max-w-6xl sm:flex sm:flex-col sm:mx-auto">
-    <section id="menu" class="hidden fixed flex-col bg-white w-full h-full transition-all opacity-0">
+  <body class="w-full md:max-w-6xl md:flex md:flex-col md:mx-auto">
+    <section id="menu" class="hidden fixed flex-col bg-slate-100 bg-opacity-95  w-full h-full transition-all opacity-0">
       <div id="btn-close" class="text-right pr-6 pt-6"><button><img src="assets/icons8-close.svg" alt=""></button></div>
       <ul class="MenuList flex flex-col gap-10 w-full h-full justify-center items-center text-3xl">
         <li><a href="">Works</a></li>
@@ -16,9 +16,9 @@
         <li><a href="">Contato</a></li>
       </ul>
     </section>
-    <header class="mobileHeader flex justify-end p-4 bg-slate-300 sm:bg-white">
-      <button id="button-menu" class="sm:hidden"><img src="assets/menu.svg" alt="" /></button>
-      <nav class="hidden sm:flex gap-8 font-bold text-lg pr-4">
+    <header class="mobileHeader flex justify-end p-4 bg-slate-100 md:bg-white">
+      <button id="button-menu" class="md:hidden"><img src="assets/menu.svg" alt="" /></button>
+      <nav class="hidden md:flex gap-8 font-bold text-lg pr-4">
         <a href="">Works</a>
         <a href="">Blog</a>
         <a href="">Contato</a>
@@ -26,104 +26,104 @@
     </header>
     <main class="p-8 leading-7">
       <div class="intro flex flex-col items-center">
-        <div class="introContainer sm:flex flex-row-reverse">
-          <section class="avatar sm:w-1/3 sm:justify-end flex justify-center sm:pt-8">
+        <div class="introContainer lg:flex flex-row-reverse">
+          <section class="avatar lg:w-1/3 lg:justify-end flex justify-center lg:pt-8">
             <img src="assets/avatar.png" class="object-contain" alt="Meu avatar"/>
           </section>
-          <section class="sm:w-2/3 sm:justify-start md:pr-28 sm:pr-20">
-            <div class="intro font-semibold text-3xl sm:text-4xl py-8 pl-2 sm:pt-16">Olá, sou aluno do curso de Front-End da Elaborata!</div>
+          <section class="lg:w-2/3 lg:justify-start lg:pr-20">
+            <div class="intro font-semibold text-3xl sm:text-center lg:text-4xl py-8 pl-2 lg:pt-16">Olá,  Meu nome é Luiz Rodrigues e sou um apaixonado desenvolvedor front-end !</div>
             <div class="introDescription">
-              <p class="pl-2">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-                sint. Velit officia consequat duis enim velit mollit. Exercitation
-                veniam consequat sunt nostrud amet.
+              <p class="pl-2 text-justify">
+                Como desenvolvedor front-end, tenho domínio das principais tecnologias web para entregar interfaces intuitivas e responsivas, como HTML, CSS e JavaScript, e também tenho experiência com frameworks modernos, como React, Tailwind CSS e JQuery.   <br> <br>
+
+                
+                Sinta-se à vontade para explorar meu portfólio e entrar em contato comigo caso tenha alguma dúvida ou interesse em trabalhar juntos.
+
               </p>
             </div>
-          </section>
-        </div>
-      </div>
-      <div class=" flex justify-center sm:justify-start pl-2">
+            <div class="DownloadContainer flex justify-center pl-2">
         <button
-          class="downloadButton bg-red-600 text-white h-12 w-52 mt-7 cursor-pointer hover:bg-red-800 font-bold"
+          class="downloadButton bg-red-600 hover:bg-red-800  font-bold text-white h-12 w-52 mt-7 cursor-pointer "
         >
+        <!--  -->
           <a href="assets/meuCV.pdf" download="MeuCV">Download CV</a>
         </button>
       </div>
+          </section>
+        </div>
+      </div>
+      
       <section
-        class="recentPosts flex flex-col mt-14 rounded-lg shadow-sm"
+        class="recentPosts flex flex-col mt-14 rounded-lg shadow-md"
         style="background-color: #edf7fa"
       >
         <div class="recentPostsTitle flex p-5 justify-between">
           <h1>Posts Recentes</h1>
-          <a href="" class="text-blue-500 text-sm">Ver Tudo</a>
+          <a href="" class="text-blue-500 text-md">Ver Tudo</a>
         </div>
-        <div class="articles sm:flex flex-row-">
+        <div class="articles md:flex flex-row-">
           <article class="firstPost bg-white m-3 p-5">
-            <h2 class="font-bold text-2xl py-3">Front-End Elaborata</h2>
+            <h2 class="font-bold text-2xl py-3"><a href="">Front-End Elaborata</a></h2>
             <section class="aboutDate flex pb-3 pt-4">
-              <p>12 Fev 2023</p>
+              <p>16 Ago 2023</p>
               <img src="assets/Vector 1.svg" alt="Vetor para divisão de conteudo" class="px-5">
               <p>Design, Pattern</p>
           </section>
             <p class="pt-2">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-              sint. Velit officia consequat duis enim velit mollit. Exercitation
-              veniam consequat sunt nostrud amet.
+              Design Patterns são um conjunto de conceitos e soluções práticas para resolver problemas recorrentes no desenvolvimento de software. Eles não são códigos prontos para serem copiados e colados, mas sim, conceitos que ajudam a resolver problemas de arquitetura de código...
             </p>
           </article>
           <article class="secondPost bg-white m-3 p-5">
-              <h2 class="font-bold text-2xl py-3">Back-End Elaborata</h2>
+              <h2 class="font-bold text-2xl py-3"><a href="">Design de Ícones</a></h2>
               <section class="aboutDate flex pb-3 pt-4">
-                <p class="">12 Fev 2023</p>
+                <p class="">16 Ago 2023</p>
                 <img src="assets/Vector 1.svg" alt="Vetor para divisão de conteudo" class="px-5">
                 <p>Figma, Icon Design</p>
             </section>
               <p class="pt-2">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint.Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat sunt nostrud amet.
+                O design de ícones no Figma oferece uma abordagem intuitiva e prática para a criação de ícones visualmente atraentes. Com o Figma, os designers têm acesso a uma variedade de ferramentas e recursos que facilitam o processo de design de ícones... 
               </p>
         </div>
       </section>
       <section class="jobs flex flex-col items-center py-8 leading-6">
         <h1 class="font-bold text-3xl">Meu Portfólio</h1>
         <div class="jobsContainer">
-          <article class="job1 pt-9 sm:flex">
+          <article class="job1 pt-9 md:flex">
             <a href="">
-              <img src="assets/job1.png" alt="" class="w-full sm:max-w-lg sm:w-auto  sm:pr-5 sm:-mr-5">
-              <div class="justify-center sm:pl-5">
-                <h2 class="font-bold text-2xl py-5 sm:-mt-5 ">Designing Dashboards</h2>
+              <img src="assets/job1.png" alt="" class="w-full md:max-w-lg md:w-auto  md:pr-5 md:-mr-5">
+              <div class="justify-center md:pl-5">
+                <h2 class="font-bold text-2xl py-5 md:-mt-5 ">Designing Dashboards</h2>
             </a>
               <div class="JobDate flex ">
-                <div class="rectangle">2020</div>
+                <div class="rectangle">2023</div>
                 <p class="pl-6 pb-6 text-stone-400 ">Dashboard</p>
               </div>
               <p class="">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
             </div>
           </article>
           <div class="separator my-5"></div>
-          <article class="job2 sm:flex">
+          <article class="job2 md:flex">
             <a href="">
-              <img src="assets/job2.jpg" alt="" class="w-full  sm:max-w-lg sm:w-auto sm:pr-5  sm:-mr-5">
-              <div class="sm:pl-5">
-                <h2 class="font-bold text-2xl py-5 sm:-mt-5 ">Vibrant Portraits of 2020</h2>
+              <img src="assets/job2.jpg" alt="" class="w-full  md:max-w-lg md:w-auto md:pr-5  md:-mr-5">
+              <div class="md:pl-5">
+                <h2 class="font-bold text-2xl py-5 md:-mt-5 ">Vibrant Portraits of 2023</h2>
             </a>
               <div class="JobDate flex ">
-                <div class="rectangle">2018</div>
+                <div class="rectangle">2023</div>
                 <p class="pl-6 pb-6 text-stone-400 ">Illustration</p>
               </div>
               <p class="">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
             </div>
           </article>
           <div class="separator mt-5"></div>
-          <article class="job3 pt-4 sm:flex">
+          <article class="job3 pt-4 md:flex">
             <a href="">
-              <img src="assets/job3.png" alt="" class="w-full  sm:max-w-lg sm:w-auto sm:pr-5  sm:-mr-5">
-              <div class="sm:pl-5">
-                <h2 class="font-bold text-2xl py-5 sm:-mt-5 ">36 Days of Malayalam type</h2>
+              <img src="assets/job3.png" alt="" class="w-full  md:max-w-lg md:w-auto md:pr-5  md:-mr-5">
+              <div class="md:pl-5">
+                <h2 class="font-bold text-2xl py-5 md:-mt-5 ">36 Days of Malayalam type</h2>
             </a>
               <div class="JobDate flex ">
-                <div class="rectangle">2018</div>
+                <div class="rectangle">2023</div>
                 <p class="pl-6 pb-6 text-stone-400 ">Typography</p>
               </div>
               <p class="">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
@@ -140,7 +140,7 @@
         <a href=""><img src="assets/Twitter.svg" alt=""></a>
         <a href=""><img src="assets/Linkedin.svg" alt=""></a>
       </div>
-      <div class="text-center text-sm">Copyright ©2023 All rights reserved </div>
+      <div class="text-center text-md">Copyright ©2023 All rights reserved </div>
     </footer>
   </body>
   <script>
