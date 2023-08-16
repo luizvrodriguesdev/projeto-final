@@ -8,8 +8,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="w-full sm:max-w-6xl sm:flex sm:flex-col sm:mx-auto">
+    <section id="menu" class="hidden fixed bg-slate-400 w-full h-full flex-col justify-center items-center text-3xl">
+      <ul>
+        <li><a href="">Works</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Contato</a></li>
+      </ul>
+    </section>
     <header class="mobileHeader flex justify-end p-4 bg-slate-300 sm:bg-white">
-      <button class="sm:hidden"><img src="assets/menu.svg" alt="" /></button>
+      <button id="button-menu" class="sm:hidden"><img src="assets/menu.svg" alt="" /></button>
       <nav class="hidden sm:flex gap-8 font-bold text-lg">
         <a href="">Works</a>
         <a href="">Blog</a>
@@ -23,9 +30,9 @@
             <img src="assets/Ellipse 1.jpg" class="object-contain" alt="Meu avatar"/>
           </section>
           <section class="sm:w-2/3 sm:justify-start md:pr-36 sm:pr-20">
-            <div class="intro font-semibold text-3xl sm:text-4xl p-8 sm:pt-24">Olá, sou aluno do curso de Front-End da Elaborata!</div>
+            <div class="intro font-semibold text-3xl sm:text-4xl py-8 pl-2 sm:pt-24">Olá, sou aluno do curso de Front-End da Elaborata!</div>
             <div class="introDescription">
-              <p class="">
+              <p class="pl-2">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
                 sint. Velit officia consequat duis enim velit mollit. Exercitation
                 veniam consequat sunt nostrud amet.
@@ -34,7 +41,7 @@
           </section>
         </div>
       </div>
-      <div class=" flex justify-center sm:justify-start">
+      <div class=" flex justify-center sm:justify-start pl-2">
         <button
           class="downloadButton bg-red-600 text-white h-12 w-52 mt-7 cursor-pointer hover:bg-red-800 font-bold"
         >
@@ -77,12 +84,12 @@
               </p>
         </div>
       </section>
-      <section class="jobs flex flex-col items-center  py-8">
+      <section class="jobs flex flex-col items-center py-8">
         <h1 class="font-bold text-3xl">Meu Portfólio</h1>
         <div class="jobsContainer">
           <article class="job1 pt-9 sm:flex">
             <a href="">
-              <img src="assets/job1.png" alt="" class="w-screen max-w-lg sm:w-auto  sm:pr-5 px-5 sm:-mr-5">
+              <img src="assets/job1.png" alt="" class="w-full max-w-lg sm:w-auto  sm:pr-5 px-5 sm:-mr-5">
               <div class="justify-center">
                 <h2 class="font-bold text-2xl py-5 sm:-mt-5 px-5">Designing Dashboards</h2>
             </a>
@@ -96,29 +103,29 @@
           <div class="separator my-5"></div>
           <article class="job2 sm:flex">
             <a href="">
-              <img src="assets/job2.jpg" alt="" class="w-screen  max-w-lg sm:w-auto sm:pr-5 px-5 sm:-mr-5">
+              <img src="assets/job2.jpg" alt="" class="w-full  max-w-lg sm:w-auto sm:pr-5  sm:-mr-5">
               <div>
-                <h2 class="font-bold text-2xl py-5 sm:-mt-5 px-5">Vibrant Portraits of 2020</h2>
+                <h2 class="font-bold text-2xl py-5 sm:-mt-5 ">Vibrant Portraits of 2020</h2>
             </a>
-              <div class="JobDate flex px-5">
+              <div class="JobDate flex ">
                 <div class="rectangle">2018</div>
                 <p class="pl-6 pb-6 text-stone-400 ">Illustration</p>
               </div>
-              <p class="px-8">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+              <p class="">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
             </div>
           </article>
           <div class="separator mt-5"></div>
           <article class="job3 pt-4 sm:flex">
             <a href="">
-              <img src="assets/job3.png" alt="" class="w-screen  max-w-lg sm:w-auto sm:pr-5 px-5 sm:-mr-5">
+              <img src="assets/job3.png" alt="" class="w-full  max-w-lg sm:w-auto sm:pr-5  sm:-mr-5">
               <div>
-                <h2 class="font-bold text-2xl py-5 sm:-mt-5 px-5">36 Days of Malayalam type</h2>
+                <h2 class="font-bold text-2xl py-5 sm:-mt-5 ">36 Days of Malayalam type</h2>
             </a>
-              <div class="JobDate flex px-5">
+              <div class="JobDate flex ">
                 <div class="rectangle">2018</div>
                 <p class="pl-6 pb-6 text-stone-400 ">Typography</p>
               </div>
-              <p class="px-5">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+              <p class="">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
             </div>
           </article>
           <div class="separator mt-6"></div>
@@ -135,4 +142,23 @@
       <div class="text-center text-sm">Copyright ©2023 All rights reserved </div>
     </footer>
   </body>
+  <script>
+    // $("#menu").click(function () {
+    //   $("#sideMenu").show().animate({ right: "0" }, 500);
+    // });
+    // $("#close").click(function () {
+    //   $("#sideMenu").animate({ right: "-100%" }, 500, function () {
+    //     $(this).hide();
+    //   });
+    // });
+    document.getElementById("button-menu")
+    .addEventListener("click", function() {
+      document.getElementById("menu").style.display = "flex";
+    })
+
+    document.getElementById("btn-close")
+    .addEventListener("click", function() {
+      document.getElementById("menu").style.display = "none";
+    })
+  </script>
 </html>
