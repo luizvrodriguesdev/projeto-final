@@ -7,24 +7,23 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="w-full sm:max-w-screen-xl sm:flex sm:flex-col sm:mx-auto">
+  <body class="w-full sm:max-w-6xl sm:flex sm:flex-col sm:mx-auto">
     <header class="mobileHeader flex justify-end p-4 bg-slate-300 sm:bg-white">
       <button class="sm:hidden"><img src="assets/menu.svg" alt="" /></button>
       <nav class="hidden sm:flex gap-8 font-bold text-lg">
         <a href="">Works</a>
         <a href="">Blog</a>
         <a href="">Contato</a>
-
       </nav>
     </header>
     <main class="p-8">
       <div class="intro flex flex-col items-center">
         <div class="introContainer sm:flex flex-row-reverse">
-          <section class="avatar p-8 sm:w-1/3 sm:justify-end flex justify-center">
-            <img src="assets/Ellipse 1.jpg" alt="Meu avatar"/>
+          <section class="avatar sm:w-1/3 sm:justify-end flex justify-center">
+            <img src="assets/Ellipse 1.jpg" class="object-contain" alt="Meu avatar"/>
           </section>
-          <section class="sm:w-2/3 sm:justify-start">
-            <div class="intro font-semibold text-3xl sm:text-4xl p-8 sm:pt-24">Olá, sou aluno do curso de Front-End da Elaborata</div>
+          <section class="sm:w-2/3 sm:justify-start md:pr-36 sm:pr-20">
+            <div class="intro font-semibold text-3xl sm:text-4xl p-8 sm:pt-24">Olá, sou aluno do curso de Front-End da Elaborata!</div>
             <div class="introDescription">
               <p class="">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -34,8 +33,6 @@
             </div>
           </section>
         </div>
-        
-        
       </div>
       <div class=" flex justify-center sm:justify-start">
         <button
@@ -45,11 +42,14 @@
         </button>
       </div>
       <section
-        class="recentPosts flex flex-col items-center mt-14 rounded-lg shadow-sm"
+        class="recentPosts flex flex-col mt-14 rounded-lg shadow-sm"
         style="background-color: #edf7fa"
       >
-        <h1 class="p-5">Posts Recentes</h1>
-        <div class="articles sm:flex flex-row-reverse">
+        <div class="flex p-5 justify-between">
+          <h1>Posts Recentes</h1>
+          <a href="" class="text-blue-500">Ver Tudo</a>
+        </div>
+        <div class="articles sm:flex flex-row-">
           <article class="firstPost bg-white m-3 p-5">
             <h2 class="font-bold text-2xl py-3">Front-End Elaborata</h2>
             <section class="aboutDate flex pb-3 pt-4">
@@ -83,7 +83,7 @@
           <article class="job1 pt-9 sm:flex">
             <a href="">
               <img src="assets/job1.png" alt="" class="w-screen max-w-lg sm:w-auto  sm:pr-5 px-5 sm:-mr-5">
-              <div>
+              <div class="justify-center">
                 <h2 class="font-bold text-2xl py-5 sm:-mt-5 px-5">Designing Dashboards</h2>
             </a>
               <div class="JobDate flex px-5">
